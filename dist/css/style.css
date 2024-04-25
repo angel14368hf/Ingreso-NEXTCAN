@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/alien-moon');
+
+/* Josefin Sans: CSS class for a variable style */
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 700 */
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.alien-moon {
+    font-family: 'Alien Moon', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 4rem; /* Cambia el tamaño de la fuente según tus preferencias */
+}
+
+body {
+    margin: 0;
+}
+
+canvas {
+    z-index: -1;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.footer {
+    right: 2rem;
+    bottom: 2rem;
+    position: absolute;
+}
+
+.footer img {
+    width: 2.5rem;
+    transition: opacity 0.5s;
+}
+
+.footer img:hover {
+    opacity: 0.5;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: -30px; /* Ajusta el valor según necesites */
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #143248c4;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #ffffffa1;
+    color: black;
+}
+
+.formulario {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(0, 0, 0, 0.712);
+    text-align: center;
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+
+.border-icon:hover {
+    background-color: #3c3c3c;
+    cursor: pointer;
+    border-radius: 50%
+}
+
+
+.cuenta-gratis {
+    padding: 2rem 0;
+}
+
+.formulario input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+}
+
+.formulario input[type="button"] {
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.formulario input[type="button"]:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Nueva regla para mover la imagen */
+.container-form.sign-up img {
+    position: absolute;
+    top: 0;
+}
+
+/* Nuevo estilo para la imagen */
+.logo-empresa {
+    position: fixed; /* Establece la posición fija para que la imagen permanezca en la misma posición incluso al desplazarse por la página */
+    top: 70px; /* Ajusta la distancia desde la parte superior de la página */
+    left: 845px; /* Ajusta la distancia desde el borde derecho de la página */
+    width: 180px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto; /* Permite que la altura se ajuste automáticamente manteniendo la proporción original */
+    z-index: 1000; /* Controla la superposición de la imagen sobre otros elementos */
+}
